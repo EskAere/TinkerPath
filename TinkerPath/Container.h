@@ -1,0 +1,40 @@
+#pragma once
+#include "Component.h"
+
+#include <vector>
+#include <memory>
+
+
+namespace GUI
+{
+	/* Bind other components together */
+	class Container : public Component
+	{
+	public:
+		typedef std::shared_ptr<Container> Ptr; //Note : A container doesn't owns the components (only a reference to these components)
+
+
+	public:
+							Container();
+
+		void				pack(Component::Ptr component);
+
+		virtual bool		isSelectable() const;
+		virtual void		handleEvent(const sf::Event& event);
+
+
+	private:
+		virtual void		draw(sf::RenderTarget& target, sf::RenderStates states) const;
+
+		bool				hasSelection() const;
+		void				select(std::size_t index);
+		void				selectNext();
+		void				selectPrevious();
+
+
+	private:
+		std::vector<Component::Ptr>		mChildren;
+		int								mSelectedChild; //the currently selected component
+	};
+
+}
