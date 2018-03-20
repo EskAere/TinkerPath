@@ -7,7 +7,7 @@ This file explains how to play the game by yourself.
 
 
 ## I. Installation 
-Download [TinkerPath_Release.zip](https://drive.google.com/open?id=1W7mI4Le27yZLG80lBXmOlHzAsUfPCGP_), extract it and launch TinkerPath.exe.
+Download [TinkerPath_Release.zip](https://drive.google.com/open?id=1-JC5JBkMgw_Igs0t4IB7hH58ew42qfES), extract it and launch TinkerPath.exe.
 
 ## II. Recommended Configurations
 - Resolution : 1600 * 1024, 1920 * 1080 or higher
